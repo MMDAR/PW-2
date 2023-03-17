@@ -4,11 +4,12 @@ $skills = [
   'HTML' => 10,
   'CSS' => 10,
   'JavaScricpt' => 20,
+  'RWD Bootstrap' => 30,
   'PHP' => 30,
   'Python' => 30,
-  'Java' => 50
+  'Java' => 50,
 ];
-$domiciles = ['Jakarta', 'Deppok', 'Bogor', 'Tangerang', 'Bekasi', 'Lainnya'];
+$domiciles = ['Jakarta', 'Depok', 'Bogor', 'Tangerang', 'Bekasi', 'Lainnya'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +53,7 @@ $domiciles = ['Jakarta', 'Deppok', 'Bogor', 'Tangerang', 'Bekasi', 'Lainnya'];
     <label for="prodi" class="col-4 col-form-label">Program Studi</label> 
     <div class="col-8">
       <select id="prodi" name="prodi" class="custom-select" required="required">
-        <?php foreach($majors as $major): ?>
+        <?php foreach($majors as $major):?>
         <option value= <?php echo $major ?>><?php echo $major ?></option>
         <?php endforeach ?>
       </select>
