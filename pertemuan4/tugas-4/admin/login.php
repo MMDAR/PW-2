@@ -39,27 +39,58 @@ button {
     </style>
 </head>
 <body>
-    <form action="index.php" method="POST">
     <div class="container">
         <div class="main">
             <h2 style="text-align: center;">Login</h4>
             <label for="username">Username</label>
-            <input type="text" name="" id="username">
+            <input type="text" name="" id="Username">
             <label for="password">Password</label>
-            <input type="password" name="" id="password">
+            <input type="password" name="" id="Password">
             <br>
-            <button type="submit">Login</button>
+            <button type="submit" id="Submit" onclick="login()">Login</button>
         </div>
     </div>
-    </form>
 </body>
 </html>
 
 <?php
-if(isset($_GET['submit'])){
-$username = $_GET['username'];
-$password = $_GET['password'];
-if($username == 'admin' && $password == 'admin')
-echo "<a href='index.php'>To homepage</a>";
+if(isset($_GET['Submit'])){
+$username = $_GET['Username'];
+$password = $_GET['Password'];
+if($username == 'admin' && $password == 'admin');
+    // '<script>
+    //     function login() {
+    //         let uname = document.getElementById("Username").value;
+    //         let pass = document.getElementById("Password").value;
+            
+    //         if (uname == "admin" && pass == "admin"){
+    //             alert("Yeayy! Berhasil");
+    //             location.href = "index.php"
+    //         } else {
+    //             alert("Sugmadeeck");
+    //         }
+    //     }
+    // </script>';
 }
 ?>
+
+    <script>
+        function login() {
+            let uname = document.getElementById("Username").value;
+            let pass = document.getElementById("Password").value;
+            
+            if (uname == "admin" && pass == "admin"){
+                alert("Selamat datang");
+                location.href = "index.php"
+            } else {
+                alert("Username atau ID salah");
+            }
+        }
+    </script>';
+
+<!-- <script>
+    var btn = document.getElementById('Submit');
+    btn.addEventListener('click', function() {
+      document.location.href = 'index.php';
+    });
+  </script> -->
