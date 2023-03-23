@@ -57,7 +57,7 @@ button {
 if(isset($_GET['Submit'])){
 $username = $_GET['Username'];
 $password = $_GET['Password'];
-if($username == 'admin' && $password == 'admin');
+if($username == 'admin' && $password == 'admin'){header('location:index.php');};
     // '<script>
     //     function login() {
     //         let uname = document.getElementById("Username").value;
